@@ -1,0 +1,6 @@
+# Runtime uses the Python standard library only.
+# Tests run with the built-in unittest module (no install needed):
+#     python -m unittest discover -s tests -v
+#
+# pytest is optional — the test file is also pytest-compatible:
+pytest>=7.0

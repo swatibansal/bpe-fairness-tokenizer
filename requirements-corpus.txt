@@ -1,0 +1,12 @@
+# Dependencies for BUILDING the faithful Markdown corpus (fetch_faithful.py). The
+# tokenizer core (bpe.py/metrics.py/train.py) and the comparison (compare.py) need
+# none of these — they are standard-library only. compare.py compares against
+# bpe-tokenizer-markdown's PUBLISHED ratios, so no HuggingFace install is required.
+#
+#     python3 -m venv .venv && source .venv/bin/activate   # (a .venv already exists)
+#     pip install -r requirements-corpus.txt
+#
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.0
+markdownify>=0.11
